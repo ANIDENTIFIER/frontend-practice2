@@ -54,3 +54,18 @@ footer {
   color: #888;
   font-size: 14px;
 }
+
+/* 在输入框聚焦并且不是单选按钮时高亮 */
+input:not([type="radio"]):focus {
+  outline: 2px solid yellow;
+}
+
+/* 如果校验未通过标红 */
+input:invalid {
+  outline: 2px solid red;
+}
+
+/* 对于必填框校验通过时标绿 */
+input:valid:required {
+  outline: 2px solid green;
+}
