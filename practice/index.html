@@ -13,7 +13,7 @@
 	</header>
 	<nav>
 		<a href="#intro">填写说明</a>
-    <a href="#form">开始填写</a>
+    <a href="#form">开始借阅</a>
 	</nav>
 	<main>
 		<section id="intro">
@@ -22,7 +22,40 @@
 		</section>
 		<section id="form">
 			<form>
-					
+				<h2>借阅登记</h2>
+				<p>
+					<label for="select">选择借阅的书</label>
+					<select id="select" name="select">
+						<option value="none">请选择</option>
+						<option value="高等数学">高等数学</option>
+						<option value="大学物理">大学物理</option>
+						<option value="C语言">C语言</option>
+					</select>
+				</p>
+				<p>
+					<label for="id">学号</label>
+					<input type="number" id="id" name="id" required>
+				</p>
+				<p>
+					<label for="email">个人邮箱</label>
+					<input type="email" id="email" name="email" required>
+				</p>
+				<p>
+					<label for="ddl">借阅截止时间</label>
+					<input type="date" id="ddl" name="ddl" required>
+				</p>
+				<p>选择预借馆</p>
+				<p>
+					<label><input type="radio" name="campus" value="cg" checked> 呈贡图书馆</label>
+					<label><input type="radio" name="campus" value="dl"> 东陆图书馆</label>
+				</p>
+				<p>
+					<label for="remark">备注</label>
+					<input type="text" id="remark" name="remark" placeholder="输入备注" maxlength="100">
+				</p>
+				<p>
+					<button type="submit">确认借阅</button>
+        </p>
 			</form>
 		</section>
 	</main>
